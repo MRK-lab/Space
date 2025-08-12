@@ -1,0 +1,1118 @@
+﻿input_;output_
+"{
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Ataşehir""
+    }
+  ],
+  ""endpoint"": ""api/Branch/BranchUpdate/7"",
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""Şube adını Kadıköy yap""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Kadıköy""
+    }
+  ],
+  ""endpoint"": ""api/Branch/BranchUpdate/7"",
+  ""status"": true,
+  ""modelMessage"": ""Şube adı Kadıköy olarak güncellendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""fields"": [
+    {
+      ""name"": ""BirthDate"",
+      ""type"": ""DateTime"",
+      ""required"": true,
+      ""value"": ""2005-05-01T00:00:00""
+    }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""Doğum tarihini 1 Ocak 2004 yap""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""BirthDate"",
+      ""type"": ""DateTime"",
+      ""required"": true,
+      ""value"": ""2004-01-01T00:00:00""
+    }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Doğum tarihi 1 Ocak 2004 olarak ayarlandı"",
+  ""userMessage"": """"
+}
+"
+"{
+  ""fields"": [
+    {
+      ""name"": ""State"",
+      ""type"": ""bool"",
+      ""required"": true,
+      ""value"": false
+    }
+  ],
+  ""endpoint"": ""api/Company/CompanyCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""Şirketi aktif yap""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""State"",
+      ""type"": ""bool"",
+      ""required"": true,
+      ""value"": true
+    }
+  ],
+  ""endpoint"": ""api/Company/CompanyCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Şirket aktif hale getirildi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""fields"": [
+    {
+      ""name"": ""Username"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""john""
+    }
+  ],
+  ""endpoint"": ""api/User/UserCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""Kullanıcı adını johndoe yap""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""Username"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""johndoe""
+    }
+  ],
+  ""endpoint"": ""api/User/UserCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Kullanıcı adı johndoe olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Fiziksel tıp ve rehabilitasyon isminde bir branş ekle""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Fiziksel tıp ve rehabilitasyon""
+    }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Fiziksel tıp ve rehabilitasyon olarak ayarlandı"",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Göz hastalıkları isminde bir branş ekle""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Göz hastalıkları"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Göz hastalıkları olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""admin"" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""Kullanıcı adını admin01 yap""
+}
+";"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""admin01"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""İsteğiniz doğrultusunda, kullanıcı adı admin01 olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""guest"" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""guest kullanıcı adını guest123 olarak değiştir""
+}
+";"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""guest123"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Kullanıcı adı guest123 olarak güncellendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""mehmet"" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""mehmet kullanıcı adını mehmet_45 yap""
+}
+";"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""mehmet_45"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Kullanıcı adı mehmet_45 olarak güncellendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""Düzenlemek istediğiniz bilgileri giriniz."",
+  ""userMessage"": ""Yeni kullanıcı adı olarak zeynep_ kaydet""
+}
+";"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""zeynep_"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Kullanıcı adı zeynep_ olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Basketbol isminde bir branş tanımla""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Basketbol"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Basketbol olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Yüzme dalı eklemek istiyorum""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Yüzme"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Yüzme olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Voleybol branşını sisteme ekle""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Voleybol"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Voleybol olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Tenis branşı olsun""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Tenis"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Tenis olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Yeni branş olarak karate ekle""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Karate"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Karate olarak ayarlandı"",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Boks branşı oluştur""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Boks"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Boks olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Kayak isminde branş ekler misin""
+}
+";"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Kayak"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Branş adı Kayak olarak ayarlandı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": """" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Basketbol"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Lütfen eksik alanları doldurun."",
+  ""userMessage"": ""Yeni basketbolcu kaydı""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Elif"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Kara"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2000.10.12"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Basketbol"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Sporcu başarıyla oluşturuldu. İşlem tamamlandı."",
+  ""userMessage"": ""Elif, Kaya, 2000.10.12""
+}
+"
+"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Deniz"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Aydın"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": """" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Yüzme"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Doğum tarihi zorunludur.Eksik doğum tarihi!"",
+  ""userMessage"": ""2001.02.15""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Deniz"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Aydın"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": """" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Yüzme"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""İşlem başarılı!"",
+  ""userMessage"": """"
+}
+"
+"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Mehmet"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Demir"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1988-03-15"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": false },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Futbol"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Sporcu kaydı pasif durumda."",
+  ""userMessage"": ""sporcu pasif yap""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Mehmet"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Demir"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1988-03-15"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": false },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Futbol"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Pasif sporcu kaydı işlendi."",
+  ""userMessage"": ""Pasif sporcu kaydı""
+}
+"
+"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ozan"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Arslan"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1998.07.07"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Branş adı zorunludur.Branş bilgisi eksik."",
+  ""userMessage"": ""Futbol""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ozan"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Arslan"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1998.07.07"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Futbol"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Branş adı Futbol olarak kaydedildi."",
+  ""userMessage"": """"
+}
+"
+{“endpoint”:“api/Athlete/AthleteCreate”,“fields”:[{“name”:“Name”,“type”:“string”,“required”:true,“value”:“”},{“name”:“Surname”,“type”:“string”,“required”:true,“value”:“”},{“name”:“BirthDate”,“type”:“DateTime”,“required”:true,“value”:“”},{“name”:“State”,“type”:“bool”,“required”:true,“value”:“”},{“name”:“Branch_Name”,“type”:“string”,“required”:true,“value”:“”}],“status”:false,“modelMessage”:“JSON da düzenleme yapabilmek için cevaplarınızı giriniz.”,“userMessage”:“beyza isimli sporcu ekle”};"{
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Beyza""
+    },
+    {
+      ""name"": ""Surname"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    },
+    {
+      ""name"": ""BirthDate"",
+      ""type"": ""DateTime"",
+      ""required"": true,
+      ""value"": """"
+    },
+    {
+      ""name"": ""State"",
+      ""type"": ""bool"",
+      ""required"": true,
+      ""value"": false
+    },
+    {
+      ""name"": ""Branch_Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Lütfen sporcunuz için aşağıdaki bilgileri sağlayınız: soyadı, doğum tarihi ve branş ismi.""
+}"
+"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": """" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": false,
+  ""modelMessage"": ""Lütfen eksik alanları doldurun."",
+  ""userMessage"": ""Yeni atlet kaydı""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ahmet"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Yılmaz"" },
+    { ""name"": ""IdentityNumber"", ""type"": ""string"", ""required"": false, ""value"": ""12345678901"" },
+    { ""name"": ""BirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1995.05.20"" },
+    { ""name"": ""Phone"", ""type"": ""string"", ""required"": false, ""value"": ""05551234567"" },
+    { ""name"": ""Address"", ""type"": ""string"", ""required"": false, ""value"": ""İstanbul"" },
+    { ""name"": ""Email"", ""type"": ""string"", ""required"": false, ""value"": ""ahmet.yilmaz@example.com"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""Note"", ""type"": ""string"", ""required"": false, ""value"": ""Profesyonel atlet"" },
+    { ""name"": ""LicenseNumber"", ""type"": ""string"", ""required"": false, ""value"": ""LIC1234"" },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Atletizm"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Sporcu başarıyla oluşturuldu. İşlem tamamlandı.""
+  ""userMessage"": ""Ahmet, Yılmaz, 2345678901, 1995.05.20, 05551234567, İstanbul, Profesyonel atlet, LIC1234, Atletizm""
+}
+"
+"{
+  ""endpoint"": ""api/AthleteStatistic/AthleteStatisticCreate"",
+  ""fields"": [
+    { ""name"": ""StatisticDate"", ""type"": ""DateTime"", ""required"": true, ""value"": """" },
+    { ""name"": ""Athlete_Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""AthleteStatisticType_Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""Yapmamı istediğiniz işlem nedir?"",
+  ""userMessage"": ""Zeynep Koç'un 100m koşu süresi istatistiğini ayarlar""
+}
+";"{
+  ""endpoint"": ""api/AthleteStatistic/AthleteStatisticCreate"",
+  ""fields"": [
+    { ""name"": ""StatisticDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2025-07-21T09:00:00"" },
+    { ""name"": ""Athlete_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Zeynep Koç"" },
+    { ""name"": ""AthleteStatisticType_Name"", ""type"": ""string"", ""required"": true, ""value"": ""100m Koşu Süresi (s)"" }
+  ],
+  ""status"": true,
+  ""modelMessage"": ""Zeynep Koç'un 100m koşu değerini giriniz."",
+  ""userMessage"": ""Zeynep Koç için 100m koşu süresi 14 saniye olarak ayarla""
+}
+"
+
+"{
+  ""endpoint"": ""api/Log/LogCreate"",
+  ""fields"": [
+    { ""name"": ""Message"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""admin kullanıcısının giriş mesajını kaydet""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Message"", ""type"": ""string"", ""required"": false, ""value"": ""Admin kullanıcı girişi başarılı."" },
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": false, ""value"": ""admin"" }
+  ],
+  ""endpoint"": ""api/Log/LogCreate"",
+  ""status"": true,
+  ""modelMessage"": ""admin kullanıcısının giriş mesajını kaydedildi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Çatışma isminde bir branş ekle""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Çatışma"" }
+  ],
+  ""endpoint"": ""api/Branch/BranchCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Çatışma isminde bir branş eklendi."",
+  ""userMessage"": """"
+}
+"
+{“fields”:[{“name”:“Name”,“type”:“string”,“required”:true,“value”:“Beyza”},{“name”:“Surname”,“type”:“string”,“required”:true,“value”:“”},{“name”:“BirthDate”,“type”:“DateTime”,“required”:true,“value”:“”},{“name”:“State”,“type”:“bool”,“required”:true,“value”:false},{“name”:“Branch_Name”,“type”:“string”,“required”:true,“value”:“”}],“endpoint”:“api/Athlete/AthleteCreate”,“status”:false,“modelMessage”:“Lütfen sporcunuz için aşağıdaki bilgileri sağlayınız: soyadı, doğum tarihi ve branş ismi.”,“userMessage”:“soyadı yıldırım, 15.02.1998 voleybol”};"{
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Beyza""
+    },
+    {
+      ""name"": ""Surname"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Yıldırım""
+    },
+    {
+      ""name"": ""BirthDate"",
+      ""type"": ""DateTime"",
+      ""required"": true,
+      ""value"": ""1998-02-15""
+    },
+    {
+      ""name"": ""State"",
+      ""type"": ""bool"",
+      ""required"": true,
+      ""value"": false
+    },
+    {
+      ""name"": ""Branch_Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Voleybol""
+    }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""completed""
+}"
+"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ahmet"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Yılmaz"" },
+    { ""name"": ""FilterFromBirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1990-01-01"" },
+    { ""name"": ""FilterToBirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2000-12-31"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""FilterFromCreateDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2022-01-01"" },
+    { ""name"": ""FilterToCreateDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2024-01-01"" },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Atletizm"" },
+    { ""name"": ""Company_Name"", ""type"": ""string"", ""required"": true, ""value"": ""XYZ Spor Kulübü"" }
+  ],
+  ""endpoint"": ""api/Athlete/GetFilteredAthleteList"",
+  ""status"": false,
+  ""modelMessage"": ""Lütfen filtre alanlarını doldurun."",
+  ""userMessage"": ""Ahmet Yılmaz için filtreleme""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ahmet"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Yılmaz"" },
+    { ""name"": ""FilterFromBirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""1990-01-01"" },
+    { ""name"": ""FilterToBirthDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2000-12-31"" },
+    { ""name"": ""State"", ""type"": ""bool"", ""required"": true, ""value"": true },
+    { ""name"": ""FilterFromCreateDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2022-01-01"" },
+    { ""name"": ""FilterToCreateDate"", ""type"": ""DateTime"", ""required"": true, ""value"": ""2024-01-01"" },
+    { ""name"": ""Branch_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Atletizm"" },
+    { ""name"": ""Company_Name"", ""type"": ""string"", ""required"": true, ""value"": ""XYZ Spor Kulübü"" }
+  ],
+  ""endpoint"": ""api/Athlete/GetFilteredAthleteList"",
+  ""status"": true,
+  ""modelMessage"": ""Filtreleme başarılı. 3 kayıt bulundu."",
+  ""userMessage"": ""Ahmet Yılmaz için filtreleme""
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    {""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": """"},
+    {""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": """"}
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Yeni kullanıcı oluştur, adı ahmet, şifresi 12345""
+}
+";"{
+  ""fields"": [
+    {""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""ahmet""},
+    {""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": ""12345""}
+  ],
+  ""endpoint"": ""api/User/UserCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Yeni Ahmet isimli kullanıcı oluşturuldu."",
+  ""userMessage"": ""Yeni kullanıcı oluştur, adı ahmet, şifresi 12345""
+}
+"
+"{
+  ""endpoint"": ""api/Branch/BranchUpdate"",
+  ""fields"": [
+    {""name"": ""BranchId"", ""type"": ""int"", ""required"": true, ""value"": """"},
+    {""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """"}
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""5 numaralı şubenin ismini Operasyon olarak güncelle""
+}
+";"{
+  ""fields"": [
+    {""name"": ""BranchId"", ""type"": ""int"", ""required"": true, ""value"": 5},
+    {""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Operasyon""}
+  ],
+  ""endpoint"": ""api/Branch/BranchUpdate"",
+  ""status"": true,
+  ""modelMessage"": ""Güncelleme işlemi başarıyla gerçekleştirildi."",
+  ""userMessage"": ""5 numaralı şubenin ismini Operasyon olarak güncelle""
+}
+"
+"{
+  ""endpoint"": ""api/Student/StudentCreate"",
+  ""fields"": [
+    {""name"": ""FirstName"", ""type"": ""string"", ""required"": true, ""value"": """"},
+    {""name"": ""LastName"", ""type"": ""string"", ""required"": true, ""value"": """"},
+    {""name"": ""Age"", ""type"": ""int"", ""required"": true, ""value"": """"}
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Adı Elif, soyadı Yılmaz olan bir öğrenci ekle, yaşı 22""
+}
+";"{
+  ""fields"": [
+    {""name"": ""FirstName"", ""type"": ""string"", ""required"": true, ""value"": ""Elif""},
+    {""name"": ""LastName"", ""type"": ""string"", ""required"": true, ""value"": ""Yılmaz""},
+    {""name"": ""Age"", ""type"": ""int"", ""required"": false, ""value"": 22}
+  ],
+  ""endpoint"": ""api/Student/StudentCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Elif Yılmaz eklendi."",
+  ""userMessage"": ""Adı Elif, soyadı Yılmaz olan bir öğrenci ekle, yaşı 22""
+}
+"
+"{
+  ""endpoint"": ""api/Course/CourseCreate"",
+  ""fields"": [
+    {""name"": ""Title"", ""type"": ""string"", ""required"": true, ""value"": """"},
+    {""name"": ""Credit"", ""type"": ""int"", ""required"": true, ""value"": """"}
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""3 kredilik Fizik dersi ekle""
+}
+";"{
+  ""fields"": [
+    {""name"": ""Title"", ""type"": ""string"", ""required"": true, ""value"": ""Fizik""},
+    {""name"": ""Credit"", ""type"": ""int"", ""required"": true, ""value"": 3}
+  ],
+  ""endpoint"": ""api/Course/CourseCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Eklendi."",
+  ""userMessage"": ""3 kredilik Fizik dersi ekle""
+}
+"
+"{
+  ""endpoint"": ""api/Branch/GetFilteredBranchList"",
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    },
+    {
+      ""name"": ""Company_Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""İstanbul ve XYZ şirketine ait şubeleri filtrele""
+}
+";""{
+  ""endpoint"": ""api/Branch/GetFilteredBranchList"",
+  ""fields"": [
+    {
+      ""name"": ""Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""İstanbul""
+    },
+    {
+      ""name"": ""Company_Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""XYZ""
+    }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""İstanbul'da ki XYZ şirketleri filtrelendi."",
+  ""userMessage"": ""İstanbul ve XYZ şirketine ait şubeleri filtrele""
+}"
+
+"{
+  ""endpoint"": ""api/Position/PositionCreate"",
+  ""fields"": [
+    {
+      ""name"": ""PositionName"",
+      ""type"": ""string"",
+      ""required"": false,
+      ""value"": """"
+    },
+    {
+      ""name"": ""Branch_Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Satış müdürü pozisyonunu Kadıköy şubesine ekle""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""PositionName"",
+      ""type"": ""string"",
+      ""required"": false,
+      ""value"": ""Satış Müdür""
+    },
+    {
+      ""name"": ""Branch_Name"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""endpoint"": ""api/Position/PositionCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Kadıköy şubesine satış müdürü pozisyonu eklendi."",
+  ""userMessage"": ""Satış müdürü pozisyonunu Kadıköy şubesine ekle""
+}
+"
+"{
+  ""fields"": [
+    {
+      ""name"": ""SmsLimit"",
+      ""type"": ""int"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""endpoint"": ""api/CompanySmsLimit/CompanySmsLimitCreate"",
+  ""status"": true,
+  ""modelMessage"": ""completed"",
+  ""userMessage"": ""Şirkete 1000 SMS limiti ekle""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""SmsLimit"",
+      ""type"": ""int"",
+      ""required"": true,
+      ""value"": 1000
+    }
+  ],
+  ""endpoint"": ""api/CompanySmsLimit/CompanySmsLimitCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Şirketinize 1000 SMS limiti eklendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""FkProfile_Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Yeni kullanıcı: username Can, name Mehmet Yılmaz, profil admin, şifre gizli""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""Can"" },
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Mehmet Yılmaz"" },
+    { ""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": ""gizli"" },
+    { ""name"": ""FkProfile_Name"", ""type"": ""string"", ""required"": true, ""value"": ""admin"" }
+  ],
+  ""endpoint"": ""api/User/UserCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Yeni kullanıcı eklendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Tax/TaxCreate"",
+  ""fields"": [
+    { ""name"": ""Amount"", ""type"": ""int"", ""required"": true, ""value"": """" },
+    { ""name"": ""Athlete_Name"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Ahmet isimli sporcunun 1500 vergi tutarını kaydet""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Amount"", ""type"": ""int"", ""required"": true, ""value"": 1500 },
+    { ""name"": ""Athlete_Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ahmet"" }
+  ],
+  ""endpoint"": ""api/Tax/TaxCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Ahmet isimli sporcunun 1500 vergi tutarı kaydedildi"",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""BirthDate"", ""type"": ""date"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Adı Ali, soyadı Yılmaz ve 2001 doğumlu bir sporcu ekle""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ali"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Yılmaz"" },
+    { ""name"": ""BirthDate"", ""type"": ""date"", ""required"": true, ""value"": ""2001-01-01"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Sporcu eklendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Coach/CoachCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""BranchId"", ""type"": ""int"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Veli adlı antrenörü 3 numaralı branşa ata""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Veli"" },
+    { ""name"": ""BranchId"", ""type"": ""int"", ""required"": true, ""value"": 3 }
+  ],
+  ""endpoint"": ""api/Coach/CoachCreate"",
+  ""status"": true,
+  ""modelMessage"": ""İşlem başarılı."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Organization/OrganizationCreate"",
+  ""fields"": [
+    { ""name"": ""Title"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""TaxNumber"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Vergi numarası 123456 olan A Spor Kulübünü oluştur""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Title"", ""type"": ""string"", ""required"": true, ""value"": ""A Spor Kulübü"" },
+    { ""name"": ""TaxNumber"", ""type"": ""string"", ""required"": true, ""value"": ""123456"" }
+  ],
+  ""endpoint"": ""api/Organization/OrganizationCreate"",
+  ""status"": true,
+  ""modelMessage"": ""123456 vergi numarasına sahip A Spor Klübü oluşturuldu."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""BirthDate"", ""type"": ""date"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Ali Veli isimli sporcuyu 2001-05-20 doğum tarihiyle ekle""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Name"", ""type"": ""string"", ""required"": true, ""value"": ""Ali"" },
+    { ""name"": ""Surname"", ""type"": ""string"", ""required"": true, ""value"": ""Veli"" },
+    { ""name"": ""BirthDate"", ""type"": ""date"", ""required"": true, ""value"": ""2001-05-20"" }
+  ],
+  ""endpoint"": ""api/Athlete/AthleteCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Ali Veli sporcu eklendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Organization/OrganizationCreate"",
+  ""fields"": [
+    { ""name"": ""OrganizationName"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""TaxNumber"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""Vergi numarası 1234567890 olan Alfa Ltd. şirketini ekle""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""OrganizationName"", ""type"": ""string"", ""required"": true, ""value"": ""Alfa Ltd."" },
+    { ""name"": ""TaxNumber"", ""type"": ""string"", ""required"": true, ""value"": ""1234567890"" }
+  ],
+  ""endpoint"": ""api/Organization/OrganizationCreate"",
+  ""status"": true,
+  ""modelMessage"": ""Vergi numarası 1234567890 olan Alfa Ltd. şirketini eklendi"",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/User/UserCreate"",
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Email"", ""type"": ""string"", ""required"": true, ""value"": """" },
+    { ""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": """" }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""kullanıcı adı ayse_01, email ayse@example.com ve şifre 123456 ile kullanıcı oluştur""
+}
+";"{
+  ""fields"": [
+    { ""name"": ""Username"", ""type"": ""string"", ""required"": true, ""value"": ""ayse_01"" },
+    { ""name"": ""Email"", ""type"": ""string"", ""required"": true, ""value"": ""ayse@example.com"" },
+    { ""name"": ""Password"", ""type"": ""string"", ""required"": true, ""value"": ""123456"" }
+  ],
+  ""endpoint"": ""api/User/UserCreate"",
+  ""status"": true,
+  ""modelMessage"": ""ayse_01 kişisi eklendi."",
+  ""userMessage"": """"
+}
+"
+"{
+  ""endpoint"": ""api/Competition/Create"",
+  ""fields"": [
+    {
+      ""name"": ""Title"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": """"
+    },
+    {
+      ""name"": ""StartDate"",
+      ""type"": ""date"",
+      ""required"": true,
+      ""value"": """"
+    },
+    {
+      ""name"": ""EndDate"",
+      ""type"": ""date"",
+      ""required"": true,
+      ""value"": """"
+    }
+  ],
+  ""status"": false,
+  ""modelMessage"": ""JSON da düzenleme yapabilmek için cevaplarınızı giriniz."",
+  ""userMessage"": ""2025 Mayıs ayının 1'ine Atletizm Turnuvası ekle""
+}
+";"{
+  ""fields"": [
+    {
+      ""name"": ""Title"",
+      ""type"": ""string"",
+      ""required"": true,
+      ""value"": ""Atletizm Turnuvası""
+    },
+    {
+      ""name"": ""StartDate"",
+      ""type"": ""date"",
+      ""required"": true,
+      ""value"": ""2025-05-01""
+    },
+    {
+      ""name"": ""EndDate"",
+      ""type"": ""date"",
+      ""required"": true,
+      ""value"": ""2025-05-31""
+    }
+  ],
+  ""endpoint"": ""api/Competition/Create"",
+  ""status"": true,
+  ""modelMessage"": ""Turnuva eklendi."",
+  ""userMessage"": """"
+}
+"
+
+
