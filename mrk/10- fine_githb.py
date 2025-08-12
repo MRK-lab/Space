@@ -437,7 +437,7 @@ class EmbeddedFineTuner:
                 logger.info(f"Exporting {quant_method}...")
 
                 self.model.push_to_hub_gguf(
-                    repo_id=f"{self.config.hub_model_id}-{quant_method}",
+                    repo_id=f"{self.config.hub_model_id}",
                     tokenizer=self.tokenizer,
                     quantization_method=quant_method,
                     token=self.config.hf_token,
@@ -730,5 +730,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
