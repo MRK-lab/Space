@@ -685,8 +685,8 @@ def main():
 
         # Output settings
         output_dir="./embedded_outputs",
-        hub_model_id="Helin02/helin_fine",  # Your model name
-        hf_token="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",
+        hub_model_id="01Nur/case_1",  # Your model name
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Endpoint seçimi:",
@@ -730,6 +730,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
