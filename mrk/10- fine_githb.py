@@ -677,7 +677,7 @@ def main():
         gradient_accumulation_steps=8,
         learning_rate=1e-4,
         warmup_steps=20,
-        max_steps=500,  # Increase for better performance
+        max_steps=200,  # Increase for better performance
         weight_decay=0.01,
 
         # Dataset
@@ -686,7 +686,7 @@ def main():
         # Output settings
         output_dir="./embedded_outputs",
         hub_model_id="Helin02/helin_fine",  # Your model name
-        hf_token="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",
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Endpoint seçimi:",
@@ -730,6 +730,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
