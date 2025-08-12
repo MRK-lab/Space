@@ -430,7 +430,7 @@ class EmbeddedFineTuner:
         """Export model to GGUF and HuggingFace Hub"""
         logger.info("📦 Exporting models...")
 
-        quantization_methods = ["q4_k_m", "q8_0", "f16"]
+        quantization_methods = ["q4_k_m", "q8_0"]
 
         for quant_method in quantization_methods:
             try:
@@ -691,7 +691,7 @@ def main():
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Endpoint seçimi:",
-        task_description="En uygun endpoint adını seç. Sadece endpoint adını yaz.",
+        task_description="En uygun endpoint adını seç. Sadece endpoint adını yaz. Aksi bir durum olursa False yaz.",
 
         # Advanced settings
         logging_steps=5,
