@@ -3,18 +3,14 @@
 Upload local model files (gguf + safetensors + tokenizer) to Hugging Face model repo.
 
 Usage:
-  # set env or pass token
   export HF_TOKEN="hf_xxx..."
-  python upload_to_hf.py --local-dir ./mrkswe/phi4-model02-endpoint --repo-id mrkswe/phi4-model02-endpoint
-
-Or:
-  python upload_to_hf.py --local-dir ./mrkswe/phi4-model02-endpoint --repo-id mrkswe/phi4-model02-endpoint --token hf_xxx...
+  python upload_to_hf.py --local-dir ./mrkswe/phi4-model02-endpoint --repo-id mrkswe/phi4-model02-endpoint --use-git-lfs
 """
 import os
 import sys
 import argparse
 from pathlib import Path
-from huggingface_hub import HfApi, Repository, upload_file
+from huggingface_hub import HfApi, Repository
 from huggingface_hub.utils import RepositoryNotFoundError
 
 def parse_args():
@@ -67,13 +63,15 @@ def main():
         return
 
     # If user requested git-lfs push for large files, use Repository helper
-    if args.use_git-lfs:
+    # NOTE: argparse turns --use-git-lfs into args.use_git_lfs
+    if getattr(args, "use_git_lfs", False):
         print("Using git-lfs Repository method (recommended for large files). This requires 'git' and 'git-lfs' available.")
         try:
             repo_local_dir = Path("./hf_temp_repo")
             if repo_local_dir.exists():
                 import shutil
                 shutil.rmtree(repo_local_dir)
+            # Clone the remote repo into a temp folder
             repo = Repository(local_dir=repo_local_dir, clone_from=args.repo_id, use_auth_token=token)
             # copy files into repo_local_dir
             import shutil
@@ -95,7 +93,6 @@ def main():
     for f in files:
         try:
             print(f"Uploading {f.name} ...")
-            # upload_file will detect file-like or path
             api.upload_file(
                 path_or_fileobj=str(f),
                 path_in_repo=f.name,
@@ -106,11 +103,9 @@ def main():
             print(" Uploaded:", f.name)
         except Exception as e:
             print(f"FAILED to upload {f.name}: {e}", file=sys.stderr)
-            # If unauthorized, fail fast
             if "401" in str(e) or "Unauthorized" in str(e):
                 print("Authentication / permission error. Check token scopes (write permission) and repo ownership.", file=sys.stderr)
                 sys.exit(1)
-            # continue trying next files for other errors
     print("All done (attempted uploads).")
 
 if __name__ == "__main__":
