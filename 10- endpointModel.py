@@ -692,7 +692,7 @@ def main():
         gradient_accumulation_steps=8,
         learning_rate=1e-4,
         warmup_steps=20,
-        max_steps=500,  # Increase for better performance
+        max_steps=200,  # Increase for better performance
         weight_decay=0.01,
 
         # Dataset
@@ -746,4 +746,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
