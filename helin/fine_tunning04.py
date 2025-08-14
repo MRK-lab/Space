@@ -376,13 +376,10 @@ class EmbeddedFineTuner:
 
 
             # early stopping için parametler
-            """load_best_model_at_end=True,  # en iyi checkpoint'i eğitimin sonunda yükle
+            load_best_model_at_end=True,  # en iyi checkpoint'i eğitimin sonunda yükle
             metric_for_best_model="eval_loss",  # EarlyStopping hangi metric'e bakacak
-            greater_is_better=False,  # eval_loss küçüldükçe "daha iyi"""
-            early_stopping_patience=3,             # kaç adım sonra duracak
-            early_stopping_threshold=0.0,          # değişim eşiği
-            early_stopping_metric="eval_loss",     # hangi metriğe bakacak
-            early_stopping_greater_is_better=False
+            greater_is_better=False,  # eval_loss küçüldükçe "daha iyi
+           
 
         )
 
@@ -752,5 +749,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
