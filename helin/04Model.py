@@ -729,7 +729,7 @@ def main():
         # Output settings
         output_dir="./embedded_outputs",
         hub_model_id="mrkswe/phi4-model04",  # Your model name
-        hf_token="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",
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Senin görevin, kullanıcının mesajına göre, verilen GET endpoint’i için geçerli bir filtre JSON’u üretmektir.",
@@ -775,4 +775,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
