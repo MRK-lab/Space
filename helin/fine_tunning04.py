@@ -2,6 +2,14 @@
 """
 Embedded Fine-tuning for Ollama
 System message gömülü - Her seferinde system message göndermeye gerek yok!
+
+
+
+sudo apt update
+sudo apt install libcurl4-openssl-dev
+pip3 install unsloth
+pip3 install mistral-common
+
 """
 
 import unsloth
@@ -53,7 +61,7 @@ class EmbeddedTrainingConfig:
     weight_decay: float = 0.01
 
     # Dataset settings
-    dataset_name: str = "mrkswe/model-04-dataset" # burayı değiştirdin
+    dataset_name: str = "mrkswe/llmEndpointDatasetConversation_2"
 
     # Output settings
     output_dir: str = "./embedded_outputs"
@@ -365,6 +373,9 @@ class EmbeddedFineTuner:
             dataset_num_proc=1,
             max_length=self.config.max_seq_length,
             packing=False,
+
+
+            # early stopping için parametler
             load_best_model_at_end=True,  # en iyi checkpoint'i eğitimin sonunda yükle
             metric_for_best_model="eval_loss",  # EarlyStopping hangi metric'e bakacak
             greater_is_better=False,  # eval_loss küçüldükçe "daha iyi"
@@ -433,13 +444,14 @@ class EmbeddedFineTuner:
         """Export model to GGUF and HuggingFace Hub"""
         logger.info("📦 Exporting models...")
 
-        quantization_methods = ["q4_k_m", "q8_0", "f16"]
+        quantization_methods = ["q4_k_m", "q8_0"]
 
         for quant_method in quantization_methods:
             try:
                 logger.info(f"Exporting {quant_method}...")
 
                 self.model.push_to_hub_gguf(
+                    # repo_id=f"{self.config.hub_model_id}-{quant_method}",
                     repo_id=f"{self.config.hub_model_id}",
                     tokenizer=self.tokenizer,
                     quantization_method=quant_method,
@@ -661,7 +673,7 @@ def main():
     }
 
     # 📝 MODEL SELECTION
-    SELECTED_MODEL = "llama-3.2-3b"  # Change this to select different model
+    SELECTED_MODEL = "phi-4"  # Change this to select different model
 
     # ⚙️ EMBEDDED CONFIGURATION
     config = EmbeddedTrainingConfig(
@@ -680,11 +692,11 @@ def main():
         gradient_accumulation_steps=8,
         learning_rate=1e-4,
         warmup_steps=20,
-        max_steps=200,  # Increase for better performance
+        max_steps=200,  # Increase for better performance 
         weight_decay=0.01,
 
         # Dataset
-        dataset_name="mrkswe/model-04-dataset",# burayı değiştirdim
+        dataset_name="mrkswe/model-04-dataset",
 
         # Output settings
         output_dir="./embedded_outputs",
@@ -692,9 +704,11 @@ def main():
         hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
-        task_prefix="Senin görevin, kullanıcının mesajına göre, verilen GET endpoint’i için geçerli bir filtre JSON’u üretmektir.",
-        task_description=(". Eğer önceki filtre JSON’u varsa ve yeni mesaj onun devamı niteliğindeyse,önceki data’yı genişlet veya güncelle; tamamen silme"
-                         " Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı;eşleşenleri data’ya ekle. Diğerlerini atla."Hiç eşleşme yoksa data: {} olarak bırak."),
+        task_prefix="Endpoint seçimi:",
+        task_description=(
+            " Eğer önceki filtre JSON’u varsa ve yeni mesaj onun devamı niteliğindeyse, önceki data’yı genişlet veya güncelle; tamamen silme."
+            "Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla.""Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla"
+                          ),
 
         # Advanced settings
         logging_steps=5,
@@ -732,14 +746,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
-
-
-
-
-
-
-
-
-
