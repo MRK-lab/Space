@@ -158,21 +158,26 @@ class EmbeddedFineTuner:
         logger.info(f"✅ Model setup completed with {template_type} template")
 
     def normalize_conversation_format(self, conversations: List[Dict]) -> List[Dict]:
-        """Normalize dataset format"""
         normalized = []
-
         for msg in conversations:
             if "from" in msg and "value" in msg:
                 role = "user" if msg["from"] == "human" else "assistant"
-                normalized.append({
-                    "role": role,
-                    "content": msg["value"]
-                })
+                content = msg["value"]
+                # güvenlik: None/False/boolean/number -> string
+                if content is None:
+                    content = ""
+                else:
+                    content = str(content)
+                normalized.append({"role": role, "content": content})
             elif "role" in msg and "content" in msg:
-                normalized.append(msg)
+                content = msg["content"]
+                if content is None:
+                    content = ""
+                else:
+                    content = str(content)
+                normalized.append({"role": msg["role"], "content": content})
             else:
                 logger.warning(f"Unknown conversation format: {msg}")
-
         return normalized
 
     def create_embedded_training_prompt(self, conversation: List[Dict]) -> str:
