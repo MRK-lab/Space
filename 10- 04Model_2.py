@@ -157,27 +157,49 @@ class EmbeddedFineTuner:
 
         logger.info(f"✅ Model setup completed with {template_type} template")
 
-    def normalize_conversation_format(self, conversations: List[Dict]) -> List[Dict]:
+    def normalize_conversation_format(self, conversations: List[Dict], max_chars: int = 5000) -> List[Dict]:
         normalized = []
         for msg in conversations:
+            # extract
             if "from" in msg and "value" in msg:
                 role = "user" if msg["from"] == "human" else "assistant"
-                content = msg["value"]
-                # güvenlik: None/False/boolean/number -> string
-                if content is None:
-                    content = ""
-                else:
-                    content = str(content)
-                normalized.append({"role": role, "content": content})
+                raw = msg["value"]
             elif "role" in msg and "content" in msg:
-                content = msg["content"]
-                if content is None:
-                    content = ""
-                else:
-                    content = str(content)
-                normalized.append({"role": msg["role"], "content": content})
+                role = msg["role"]
+                raw = msg["content"]
             else:
                 logger.warning(f"Unknown conversation format: {msg}")
+                continue
+
+            # normalize
+            if raw is None:
+                content = ""
+            elif isinstance(raw, bool):
+                content = "True" if raw else "False"
+            elif isinstance(raw, (dict, list)):
+                try:
+                    content = json.dumps(raw, ensure_ascii=False, separators=(",", ":"))
+                except Exception:
+                    content = str(raw)
+            elif isinstance(raw, (int, float)):
+                content = str(raw)
+            elif isinstance(raw, str):
+                content = raw.strip()
+                # compact if JSON-like
+                if (content.startswith("{") or content.startswith("[")):
+                    try:
+                        parsed = json.loads(content)
+                        content = json.dumps(parsed, ensure_ascii=False, separators=(",", ":"))
+                    except Exception:
+                        pass
+            else:
+                try:
+                    content = str(raw)
+                except Exception:
+                    content = ""
+
+            normalized.append({"role": role, "content": content})
+
         return normalized
 
     def create_embedded_training_prompt(self, conversation: List[Dict]) -> str:
