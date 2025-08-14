@@ -9,8 +9,11 @@ huggingface-cli login
 
 2- Yüklemeler:
 sudo apt update
+
 sudo apt install libcurl4-openssl-dev
+
 pip3 install unsloth
+
 pip3 install mistral-common
 
 3- git reposunu yükleyelim:
