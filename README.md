@@ -3,6 +3,8 @@
 
 # Sırasıyla işlemler
 
+MODELE GÖRE GEREKLİ ALANLAR DÜZENLENMELİDİR (PROMT-TOKEN-REPO-ID)
+
 1- Token geçerliliği kontrolü:
 huggingface-cli login
 -token gir
