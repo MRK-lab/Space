@@ -701,7 +701,7 @@ def main():
     }
 
     # 📝 MODEL SELECTION
-    SELECTED_MODEL = "llama-3.2-3b"  # Change this to select different model
+    SELECTED_MODEL = "phi-4"  # Change this to select different model
 
     # ⚙️ EMBEDDED CONFIGURATION
     config = EmbeddedTrainingConfig(
@@ -729,7 +729,7 @@ def main():
         # Output settings
         output_dir="./embedded_outputs",
         hub_model_id="mrkswe/phi4-model04",  # Your model name
-        hf_token="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",
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Senin görevin, kullanıcının mesajına göre, verilen GET endpoint’i için geçerli bir filtre JSON’u üretmektir.",
@@ -777,4 +777,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
