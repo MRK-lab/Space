@@ -689,8 +689,9 @@ def main():
         hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
-        task_prefix="Endpoint seçimi:",
-        task_description="En uygun endpoint adını seç. Sadece endpoint adını yaz.",
+        task_prefix="Senin görevin, kullanıcının mesajına göre, verilen GET endpoint’i için geçerli bir filtre JSON’u üretmektir.",
+        task_description=(". Eğer önceki filtre JSON’u varsa ve yeni mesaj onun devamı niteliğindeyse,önceki data’yı genişlet veya güncelle; tamamen silme"
+                         " Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı;eşleşenleri data’ya ekle. Diğerlerini atla."Hiç eşleşme yoksa data: {} olarak bırak."),
 
         # Advanced settings
         logging_steps=5,
@@ -730,6 +731,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
