@@ -13,6 +13,7 @@ huggingface-cli login
 
 
 2- Yüklemeler:
+
 sudo apt update
 
 sudo apt install libcurl4-openssl-dev
