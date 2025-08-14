@@ -365,6 +365,9 @@ class EmbeddedFineTuner:
             dataset_num_proc=1,
             max_length=self.config.max_seq_length,
             packing=False,
+            load_best_model_at_end=True,  # en iyi checkpoint'i eğitimin sonunda yükle
+            metric_for_best_model="eval_loss",  # EarlyStopping hangi metric'e bakacak
+            greater_is_better=False,  # eval_loss küçüldükçe "daha iyi"
         )
 
 
@@ -731,6 +734,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
