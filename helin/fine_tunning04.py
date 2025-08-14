@@ -685,8 +685,8 @@ def main():
 
         # Output settings
         output_dir="./embedded_outputs",
-        hub_model_id="01Nur/model04",  # Your model name
-        hf_token="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",
+        hub_model_id="mrkswe/phi4-model04",  # Your model name
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Endpoint seçimi:",
@@ -730,6 +730,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
