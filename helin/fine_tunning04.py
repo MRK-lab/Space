@@ -712,7 +712,7 @@ def main():
         task_prefix="Endpoint seçimi:",
         task_description=(
             " Eğer önceki filtre JSON’u varsa ve yeni mesaj onun devamı niteliğindeyse, önceki data’yı genişlet veya güncelle; tamamen silme."
-            "Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla.""Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla"
+            "Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla.""Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla""Hiç eşleşme yoksa data: {} olarak bırak."
                           ),
 
         # Advanced settings
@@ -752,4 +752,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
