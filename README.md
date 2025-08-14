@@ -5,7 +5,7 @@
 
 1- Token geçerliliği kontrolü:
 huggingface-cli login
-# token gir
+-token gir
 
 2- Yüklemeler:
 sudo apt update
