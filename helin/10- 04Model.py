@@ -701,7 +701,7 @@ def main():
     }
 
     # 📝 MODEL SELECTION
-    SELECTED_MODEL = "phi-4"  # Change this to select different model
+    SELECTED_MODEL = "llama-3.2-3b"  # Change this to select different model
 
     # ⚙️ EMBEDDED CONFIGURATION
     config = EmbeddedTrainingConfig(
@@ -724,19 +724,19 @@ def main():
         weight_decay=0.01,
 
         # Dataset
-        dataset_name="mrkswe/model-04-dataset",
+        dataset_name="mrkswe/datasetjson07",
 
         # Output settings
         output_dir="./embedded_outputs",
-        hub_model_id="mrkswe/phi4-model04",  # Your model name
-        hf_token="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",
+        hub_model_id="mrkswe/phi4-model07",  # Your model name
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
-        task_prefix="Senin görevin, kullanıcının mesajına göre, verilen GET endpoint’i için geçerli bir filtre JSON’u üretmektir.",
+        task_prefix="Endpoint seçimi:",
         task_description=(
-            "Eğer önceki filtre JSON’u varsa ve yeni mesaj onun devamı niteliğindeyse, önceki data’yı genişlet veya güncelle; tamamen silme."
-            "Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla.""Kullanıcı mesajındaki terimler fieldNames’e birebir uymalı; eşleşenleri data’ya ekle. Diğerlerini atla"
-            "Hiç eşleşme yoksa data: {} olarak bırak."
+            "Genel veriler:  bir endpoint ve en az iki tane de kullanıcı mesajı gelecek. Gelen endpoint, 1. kullanıcı mesajı sonrası tespit edilmiştir. Senden isteğim en sondaki  kullanıcı mesajı önceki mesajlarla ve endpointle bağlantısı var mı onu tespit edeceksin."
+            "En son gelen kullanıcı mesajını; endpointe ve diğer mesajlara uygunluğunu onların devamı olup olmadığını tespit edeceksin"
+            
         ),
 
         # Advanced settings
@@ -777,4 +777,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
