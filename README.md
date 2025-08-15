@@ -30,6 +30,8 @@ git clone https://github.com/MRK-lab/Space.git
 
 4- Token hatası alırsak upload_to_ht.py kodunu çalıştıracağız:
 
+sudo apt install git-lfs
+
 export HF_TOKEN="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"
 
 python upload_to_hf.py -d ./mrkswe/<modelRepoAdı> -r mrkswe/<modelRepoAdı> --use-git-lfs
