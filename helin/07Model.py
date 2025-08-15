@@ -701,7 +701,7 @@ def main():
     }
 
     # 📝 MODEL SELECTION
-    SELECTED_MODEL = "llama-3.2-3b"  # Change this to select different model
+    SELECTED_MODEL = "phi-4"  # Change this to select different model
 
     # ⚙️ EMBEDDED CONFIGURATION
     config = EmbeddedTrainingConfig(
@@ -729,7 +729,7 @@ def main():
         # Output settings
         output_dir="./embedded_outputs",
         hub_model_id="mrkswe/phi4-model07",  # Your model name
-        hf_token="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",
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Endpoint seçimi:",
@@ -777,6 +777,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
