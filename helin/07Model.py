@@ -729,7 +729,7 @@ def main():
         # Output settings
         output_dir="./embedded_outputs",
         hub_model_id="mrkswe/phi4-model07",  # Your model name
-        hf_token="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",
+        hf_token="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",
 
         # Embedded behavior - BU DAVRANIŞI GÖMER!
         task_prefix="Endpoint seçimi:",
@@ -777,6 +777,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
